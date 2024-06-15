@@ -1,0 +1,20 @@
+{
+  "content": {
+    "home": {
+      "h2": "Paul Banks, Handyman",
+      "body": "This site is still under construction. Head over to the services page to see what I can offer."
+    },
+    "about": {
+      "h2": "What the sites aboot",
+      "body": "@HTML <h1>TADA FUCKER</h1><p>You are a: </p><ul><li>Big</li><li>fat</li><li>hairy</li><li>foul smelling</li><li>hippie</li></ul><p>Go eat some <b><em>SOY</em></b></p>"
+    },
+    "services": {
+      "h2": "What Do I Offer",
+      "body": "Get serviced in more ways than one ;)"
+    },
+    "contact": {
+      "h2": "Under Construction!",
+      "body": "This page is currently being built. For now drop me an email at mathewp9876@protonmail.com"
+    }
+  }
+}

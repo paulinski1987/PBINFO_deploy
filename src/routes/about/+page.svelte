@@ -1,0 +1,52 @@
+<!-- ABOUT PAGE -->
+<script>
+  import { Image,
+    Container,
+    Row,
+    Col
+  } from '@sveltestrap/sveltestrap';
+import AppBody from "../../components/AppBody.svelte";
+import { content } from '$lib/content.json';
+import Profile from '$lib/img/profile.png';
+
+</script>
+<Container fluid>
+  <Row>
+    <Col>
+      <h2 class="text-center mt-3">About Info</h2>
+      <hr />
+    </Col>
+  </Row>
+  <Row>
+    <Col sm="12" md="6">
+      <Image fluid  id="profileImg" src={Profile} style=" border: 4px solid #f37022; border-radius: 1em;"/>
+    </Col>
+
+    <Col sm="12" md="6">
+      <p class="lead">Home improvement, repair and carpentry have always been passions of mine. </p>
+
+      <p class="text-left">Growing up I was always eager to help my father and grandfather build, fix and renovate in a variety of projects, developing a proficient set of skills along the way.</p>
+
+      <p class="text-left">Since graduating in 2006, I have worked on residential and commercial projects as a carpenter, glazier, roofer and cabinet installer.</p>
+
+      <p class="text-left">When it comes to my work as a handyman I bring diverse skills appropriate for many of the projects a homeowner would like.</p>
+
+      <p class="text-left">As a sidenote I also do a bit of web development and built this website myself, so should you ever require a website give me a call!</p>
+    </Col>
+  </Row>
+
+</Container>
+<!-- <Col></Col> -->
+<style>
+  hr {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 1em;
+    text-align: center;
+    /* color: #f37022; */
+  }
+h2 {
+  color: #f37022;
+}
+
+</style>

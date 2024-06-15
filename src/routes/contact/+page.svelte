@@ -18,36 +18,35 @@ let validated = false;
 <h2 class="text-center mt-3">Contact Me</h2>
 <hr />
 
-<AppBody content={content.contact} />
   <div class="container-fluid">
     <div class="row">
       <div class="col text-center">
         <p>To inquire about your project please email me at <a
             href="mailto:mathewp9876@protonmail.com">mathewp9876@protonmail.com</a>, give me a call at <a
             href="tel:18257338381">1-825-733-8381</a>, or fill out the contact form below and I will get back to you.</p>
-        <p></p>
+            <AppBody content={content.contact} />
       </div>
     </div>
     <form id="contact">
       <div class="row">
         <div class="col-sm text-left">
           <div class="form-floating">
-            <input class="form-control" type="text" id="name">
-            <label for="name" class="infoLabel">Name:</label>
+            <input disabled class="form-control" type="text" id="name">
+            <label for="name">Name:</label>
           </div>
         </div>
 
         <div class="col-sm text-left">
           <div class="form-floating">
-            <input class="form-control" type="text" id="phone">
-            <label for="phone" class="infoLabel">Phone:</label>
+            <input disabled class="form-control" type="text" id="phone">
+            <label for="phone">Phone:</label>
           </div>
 
         </div>
         <div class="col-sm text-left">
           <div class="form-floating">
-            <input class="form-control" type="text" id="email">
-            <label for="email" class="infoLabel">Email:</label>
+            <input disabled class="form-control" type="text" id="email">
+            <label for="email">Email:</label>
           </div>
         </div>
       </div>
@@ -56,14 +55,14 @@ let validated = false;
       <div class="row mt-5">
         <div class="col-sm text-center">
           <div class="form-floating">
-            <textarea class="form-control" name="description" id="description" cols="30" rows="10"></textarea>
+            <textarea disabled class="form-control" name="description" id="description" cols="30" rows="10"></textarea>
             <label for="description">How may we help you?</label>
           </div>
         </div>
       </div>
       <div class="row mt-5">
         <div class="col text-center">
-          <button id="submit" class="btn btn-primary">Submit</button>
+          <button disabled id="submit" class="btn btn-primary">Submit</button>
         </div>
       </div>
     </form>
@@ -109,9 +108,6 @@ let validated = false;
   color: #f37022;
 }
 
-  .infoLabel {
-  width: 6em;
-}
 
 
 hr {

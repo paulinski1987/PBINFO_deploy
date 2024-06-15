@@ -20,7 +20,7 @@
 
 <Card body color={colorChoice || "default"} inverse class="text-center">
   <CardHeader>
-    <CardTitle class="fullWidth"><h3><b>{SVName}</b></h3></CardTitle>
+    <CardTitle class="fullWidth"><h2><b>{SVName}</b></h2></CardTitle>
   </CardHeader>
   <CardBody>
     <CardText>{SVP1}</CardText>
@@ -38,7 +38,7 @@ li {
   list-style-type: none;
   padding: 0.5rem;
 }
-h3 b {
+h2 b {
   color: #f37022;
   border-bottom: 1px solid #f37022;
 }

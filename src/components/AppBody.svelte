@@ -13,4 +13,11 @@ export let content;
   h2 {
     color: #f37022;
   }
+  hr {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 1em;
+    text-align: center;
+    /* color: #f37022; */
+  }
 </style>

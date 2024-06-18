@@ -17,16 +17,14 @@
     "fixtures": {
       "name": "Fixtures & Appliances",
       "SVList": [
-        "Light fixtures",
-        "Ceiling fans",
-        "Cupboards",
+        "Light fixtures & ceiling fans",
+        "Cabinets",
         "Curtain rods",
         "Shelving",
         "Furniture assembly",
-        "Dishwasher",
-        "Microwaves",
-        "Stoves",
-        "Laundry appliances"
+        "Electric stoves",
+        "Dishwasher installation & replacement",
+        "Washers & dryers"
       ],
       "up": ["arrow-up-circle", "#reno"], "down": ["arrow-down-circle", "#fence"]
     },

@@ -10,6 +10,8 @@
 // import Quote from '../../components/about/Quote.svelte';
 // import { reviews } from '$lib/Reviews.json';
 import Profile from '$lib/img/profile.png';
+
+
 </script>
 <Container fluid>
   <Row>
@@ -49,8 +51,9 @@ import Profile from '$lib/img/profile.png';
   </Row>
     {/each} -->
 
-
+    
 </Container>
+
 <!-- <Col>
 
 </Col> -->
@@ -67,5 +70,4 @@ import Profile from '$lib/img/profile.png';
   h2 {
   color: #f37022;
 }
-
 </style>

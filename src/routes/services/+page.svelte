@@ -49,6 +49,7 @@ fullpage.js used for css3 snap effect on scrolling
 	.SVCard {
     display: block;
 		max-width: 800px;
+		max-height: 100vh;
     /* max-height: 500px; */
     /* height: 12em; */
 		margin:auto;

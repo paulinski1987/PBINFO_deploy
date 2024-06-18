@@ -1,4 +1,9 @@
 <script lang='ts'>
+	/**
+	 * fullpage.js used for css3 snap effect on scrolling
+	 * https://github.com/alvarotrigo/fullPage.js
+	 * License: gplv3-license'
+	*/
 	// import Fullpage from 'svelte-fullpage.js';
 	import  ServiceCard  from '../../components/services/ServiceCard.svelte';
 	import {services} from '$lib/serviceDesc.json';
@@ -20,7 +25,10 @@
 	}
 
 </script>
-
+<!-- 
+fullpage.js used for css3 snap effect on scrolling
+	 * https://github.com/alvarotrigo/fullPage.js
+	 * License: gplv3-license' -->
 <svelte:component this={Fullpage} {options} class="FP">
 	<div class="section S3 fp-auto-height" data-anchor="reno"><div class="SVCard"><ServiceCard SVName={services.reno.name} SVList={services.reno.SVList} colorChoice={"primary"} up={services.reno.up} down={services.reno.down} /></div></div>
 	<div class="section S4 fp-auto-height" data-anchor="fixture"><div class="SVCard"><ServiceCard SVName={services.fixtures.name} SVList={services.fixtures.SVList} colorChoice={"primary"} up={services.fixtures.up} down={services.fixtures.down}/></div></div>
@@ -31,7 +39,11 @@
 </svelte:component>
 
 <style>
-  .FP {
+/* 
+fullpage.js used for css3 snap effect on scrolling
+	 * https://github.com/alvarotrigo/fullPage.js
+	 * License: gplv3-license' */
+.FP {
     opacity: 0.4;
   }
 	.SVCard {

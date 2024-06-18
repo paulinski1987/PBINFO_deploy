@@ -42,7 +42,7 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
 <!-- <div class="navBar bg-dark" data-bs-theme="dark"> -->
   
   <Navbar id="navBar" expand="md" container="fluid" class="navBar bg-primary" data-bs-theme="dark"> 
-    <NavbarBrand href="/" class="me-auto text-left"><span id="navBrand">paulbanks.info</span></NavbarBrand>
+    <NavbarBrand href="/" class="me-auto text-left" on:click={closeMenu}><span id="navBrand">paulbanks.info</span></NavbarBrand>
     <NavbarToggler id="navBarToggler" on:click={() => isOpen = !isOpen} />
       <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
         <Nav class="ms-auto" navbar>

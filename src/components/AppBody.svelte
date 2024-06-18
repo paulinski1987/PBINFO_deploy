@@ -5,8 +5,11 @@ export let content;
 
 <Container fluid>
   <h2 class="text-center mt-3" >{content.h2}</h2>
+  <h5 class="text-center">
+    <small class="text-body-secondary">{content.sub || ""}</small>
+  </h5>
   <hr />
-  <p class='text-center'>{content.body}</p>
+  <p class='text-center'>{content.body || ""}</p>
 </Container>
 
 <style>

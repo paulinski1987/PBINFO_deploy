@@ -1,20 +1,21 @@
 <script>
   import {
-    Button,
+    Icon,
     Card,
     CardBody,
     CardHeader,
     CardText,
-    CardTitle,
-    ListGroup,
-    ListGroupItem
+    CardTitle
   } from '@sveltestrap/sveltestrap';
 
   export let SVName = undefined;
   export let SVP1 = "";
   export let SVP2 = "";
   export let colorChoice = undefined;
-  export let SVList = undefined;
+  export let SVList = ["", ""];
+  export let up;
+  export let down;
+
 
 </script>
 
@@ -30,6 +31,7 @@
       <li><b>{SV}</b></li>
       {/each}
     </ul>
+    <a href={up[1] || "#"} class='up'><Icon name={up[0] || ""}/></a><a href={down[1] || "#"} class='down'><Icon name={down[0] || ""}/></a>
   </CardBody>
 </Card>
 
@@ -41,5 +43,26 @@ li {
 h2 b {
   color: #f37022;
   border-bottom: 1px solid #f37022;
+}
+.up {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  color: #f37022;
+  font-size: 3em;
+}
+.up:hover {
+  color: #fff;
+}
+.down {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  color: #f37022;
+  font-size: 3em;
+}
+
+.down:hover {
+  color: #fff;
 }
 </style>

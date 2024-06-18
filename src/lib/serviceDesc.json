@@ -1,0 +1,76 @@
+{
+  "services": {
+    "reno": {
+      "name": "Repairs & Renovations",
+      "SVList": [
+        "Demolition",
+        "Wood & aluminum framing",
+        "Drywall installation & patching",
+        "Painting & staining",
+        "Baseboards",
+        "Wood panneling",
+        "Wood refinishing",
+        "Weather stripping & caulking"
+      ],
+      "up": ["", "#"], "down": ["arrow-down-circle", "#fixture"]
+    },
+    "fixtures": {
+      "name": "Fixtures & Appliances",
+      "SVList": [
+        "Light fixtures",
+        "Ceiling fans",
+        "Cupboards",
+        "Curtain rods",
+        "Shelving",
+        "Furniture assembly",
+        "Dishwasher",
+        "Microwaves",
+        "Stoves",
+        "Laundry appliances"
+      ],
+      "up": ["arrow-up-circle", "#reno"], "down": ["arrow-down-circle", "#fence"]
+    },
+    "fence": {
+      "name": "Fences",
+      "SVList": [
+        "Wood fences",
+        "Wood & metal gates",
+        "Post replacement & install",
+        "Fence repair",
+        "Metal gate restoration"
+      ],
+      "up": ["arrow-up-circle", "#fixture"], "down": ["arrow-down-circle", "#deck"]
+    },
+    "deck": {
+      "name": "Decks",
+      "SVList": [
+        "Raised or ground level wood, PVC or composite decks",
+        "Structural & cosmetic repairs",
+        "Complete refurbishment",
+        "Additions to existing deck"
+      ],
+      "up": ["arrow-up-circle", "#fence"], "down": ["arrow-down-circle", "#washroom"]
+    },
+
+
+    "washroom": {
+      "name": "Washrooms",
+      "SVList": [
+        "Toilet",
+        "Sinks",
+        "Cabinets",
+        "Towel racks",
+        "Shower doors",
+        "Mirrors"
+      ],
+      "up": ["arrow-up-circle", "#deck"], "down": ["arrow-down-circle", "#more"]
+
+    },
+    "more": {
+      "name": "And more...",
+      "p1": "Project not listed? Head over to the Contact page and I will see what I can do for you.",
+      "SVList": [],
+      "up": ["arrow-up-circle", "#washroom"], "down": ["", "#reno"]
+    }
+  }
+}

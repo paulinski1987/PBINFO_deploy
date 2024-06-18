@@ -5,10 +5,11 @@
     Row,
     Col
   } from '@sveltestrap/sveltestrap';
-import AppBody from "../../components/AppBody.svelte";
-import { content } from '$lib/content.json';
+// import AppBody from '../../components/AppBody.svelte';
+// import { content } from '$lib/content.json';
+// import Quote from '../../components/about/Quote.svelte';
+// import { reviews } from '$lib/Reviews.json';
 import Profile from '$lib/img/profile.png';
-
 </script>
 <Container fluid>
   <Row>
@@ -34,9 +35,25 @@ import Profile from '$lib/img/profile.png';
       <p class="text-left">As a sidenote I also do a bit of web development and built this website myself, so should you ever require a website give me a call!</p>
     </Col>
   </Row>
+  <hr class="mt-4"/>
+  <Row>
+    <Col>
+      <h2 class=text-center>Customer Reviews</h2>
+      <hr />
+      <p class="text-center h4" style="color: #f37022;">Coming Soon!</p>
+    </Col>
+  </Row>
+  <!-- {#each reviews as rv}
+  <Row>
+      <Quote alignment={rv.alignment} review={rv.review} client={rv.client} />
+  </Row>
+    {/each} -->
+
 
 </Container>
-<!-- <Col></Col> -->
+<!-- <Col>
+
+</Col> -->
 <style>
   hr {
     max-width: 600px;
@@ -45,7 +62,9 @@ import Profile from '$lib/img/profile.png';
     text-align: center;
     /* color: #f37022; */
   }
-h2 {
+
+
+  h2 {
   color: #f37022;
 }
 

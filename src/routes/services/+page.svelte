@@ -1,28 +1,34 @@
-<script>
-	import Fullpage from 'svelte-fullpage.js';
+<script lang='ts'>
+	// import Fullpage from 'svelte-fullpage.js';
 	import  ServiceCard  from '../../components/services/ServiceCard.svelte';
-	import {services} from '../../components/services/serviceDesc.json';
+	import {services} from '$lib/serviceDesc.json';
+	import { onMount } from 'svelte';
+
+	let Fullpage;
+
+	onMount(async () => {
+	const module = await import('svelte-fullpage.js');
+  Fullpage = module.default;
+});
 
   const  options = {
     licenseKey: 'gplv3-license',
 		navigation: true,
 		// responsiveWidth: 700,
-		// anchors: ['Renovations', 'Outdoors', 'Kitchen&Bath', 'Windows'],
-		// onLeave: function(origin, destination, direction){
-		// 	console.log("Leaving section" + origin.index);
-		// }
+		loopTop: true, loopBottom: true,
+		anchors: ['reno', 'fixture', 'fence', 'deck', 'washroom', 'more']
 	}
 
 </script>
 
-<Fullpage {options} class="FP">
-	<div class="section S1 fp-auto-height"><div class="SVCard "><ServiceCard SVName={services.fence.name} SVList={services.fence.SVList} colorChoice={"primary"} /></div></div>
-	<div class="section S2 fp-auto-height"><div class="SVCard"><ServiceCard SVName={services.deck.name} SVList={services.deck.SVList} colorChoice={"primary"} /></div></div>
-	<div class="section S3 fp-auto-height"><div class="SVCard"><ServiceCard SVName={services.reno.name} SVList={services.reno.SVList} colorChoice={"primary"} /></div></div>
-	<div class="section S4 fp-auto-height"><div class="SVCard"><ServiceCard SVName={services.fixtures.name} SVList={services.fixtures.SVList} colorChoice={"primary"} /></div></div>
-	<div class="section S5 fp-auto-height"><div class="SVCard"><ServiceCard SVName={services.washroom.name} SVList={services.washroom.SVList} colorChoice={"primary"} /></div></div>
-	<div class="section S6 fp-auto-height"><div class="SVCard"><ServiceCard SVName={services.more.name} SVP1={services.more.p1} SVList={services.more.SVList} colorChoice={"primary"} /></div></div>
-</Fullpage>
+<svelte:component this={Fullpage} {options} class="FP">
+	<div class="section S3 fp-auto-height" data-anchor="reno"><div class="SVCard"><ServiceCard SVName={services.reno.name} SVList={services.reno.SVList} colorChoice={"primary"} up={services.reno.up} down={services.reno.down} /></div></div>
+	<div class="section S4 fp-auto-height" data-anchor="fixture"><div class="SVCard"><ServiceCard SVName={services.fixtures.name} SVList={services.fixtures.SVList} colorChoice={"primary"} up={services.fixtures.up} down={services.fixtures.down}/></div></div>
+	<div class="section S1 fp-auto-height" data-anchor="fence"><div class="SVCard "><ServiceCard SVName={services.fence.name} SVList={services.fence.SVList} colorChoice={"primary"} up={services.fence.up} down={services.fence.down} /></div></div>
+	<div class="section S2 fp-auto-height" data-anchor="deck"><div class="SVCard"><ServiceCard SVName={services.deck.name} SVList={services.deck.SVList} colorChoice={"primary"} up={services.deck.up} down={services.deck.down} /></div></div>
+	<div class="section S5 fp-auto-height" data-anchor="washroom"><div class="SVCard"><ServiceCard SVName={services.washroom.name} SVList={services.washroom.SVList} colorChoice={"primary"} up={services.washroom.up} down={services.washroom.down} /></div></div>
+	<div class="section S6 fp-auto-height" data-anchor="more"><div class="SVCard"><ServiceCard SVName={services.more.name} SVP1={services.more.p1} SVList={services.more.SVList} colorChoice={"primary"} up={services.more.up} down={services.more.down} /></div></div>
+</svelte:component>
 
 <style>
   .FP {

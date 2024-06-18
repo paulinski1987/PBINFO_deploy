@@ -1,0 +1,10 @@
+{
+  "reviews": [
+    {"client": "Jim", "review": "This guy fucking sucks", "alignment": ""},
+    {"client": "Jan", "review": "Caught him stealing my tinfoil to smoke drugs off of", "alignment": "text-center"},
+    {"client": "Joe", "review": "I think he was hitting on my wife....and daughter", "alignment": "text-end"},
+    {"client": "Julia", "review": "Pervert wouldnt stop looking down my shirt", "alignment": ""},
+    {"client": "Jared (not from subway)", "review": "Just because I look similar and have the same name I am NOT the guy from the subway commercials recently released on bail...", "alignment": "text-center"},
+    {"client": "Jeoff", "review": "Who are you? GET OUT OF MY HOUSE!", "alignment": "text-end"}
+  ]
+}

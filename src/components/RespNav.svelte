@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import {
     Icon,
     Collapse,
@@ -8,15 +8,9 @@
     Navbar,
     NavItem,
     NavLink,
-    ThemeToggler,
     colorMode, 
-    useColorMode,
-    Button,
-    Dropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    Fade
+    useColorMode
+ 
   } from "@sveltestrap/sveltestrap";
 
 let modeText = $colorMode == 'light'? "Dark" : "Light";
@@ -28,15 +22,11 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
   const closeMenu = () => { isOpen = false; };
 
   function DarkModeSwitch () {
-    let underline = document.getElementById('underline');
-
     if ($colorMode == 'light') {
       modeText = "Dark";
-      underline.style.opacity = "1";
       useColorMode('dark');
     } else {
       modeText = "Light";
-      underline.style.opacity = "0";
       useColorMode('light');
     }
     closeMenu();

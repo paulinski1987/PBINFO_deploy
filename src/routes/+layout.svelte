@@ -1,12 +1,12 @@
-<script>
+<script lang="ts">
   import RespNav from '../components/RespNav.svelte';
 </script>
-
+<div>
 <div id="RespNav" class="sticky-top">
   <RespNav />
 </div>
 <slot></slot>
-
+</div>
 <style>
   #RespNav {
     /* position:relative;

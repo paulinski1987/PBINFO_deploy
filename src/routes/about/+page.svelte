@@ -12,6 +12,7 @@
 import Profile from '$lib/img/profile.png';
 
 
+
 </script>
 <Container fluid>
   <Row>
@@ -51,7 +52,8 @@ import Profile from '$lib/img/profile.png';
   </Row>
     {/each} -->
 
-    
+
+
 </Container>
 
 <!-- <Col>
@@ -70,4 +72,7 @@ import Profile from '$lib/img/profile.png';
   h2 {
   color: #f37022;
 }
+
+
+
 </style>

@@ -11,6 +11,7 @@
   Col 
 } from '@sveltestrap/sveltestrap';
 import AppBody from "../../components/AppBody.svelte";
+import Wallet from '../../components/Wallet.svelte';
   import { content } from '$lib/content.json';
 let validated = false;
 </script>
@@ -66,9 +67,8 @@ let validated = false;
         </div>
       </div>
     </form>
-
   </div>
-
+  <Wallet --position="sticky" --alignBottom="5px" --alignLeft="1rem" />
 <!-- <Col></Col>
 <Container fluid>
   <Form {validated} on:submit={(e) => e.preventDefault()}>

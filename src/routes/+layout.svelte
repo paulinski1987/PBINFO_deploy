@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import RespNav from '../components/RespNav.svelte';
 </script>
 <div>

@@ -1,0 +1,17 @@
+{
+  "publicKeys": {
+    "SOL": {
+      "name": "Solana",
+      "key": "0xDF7D512f7A3dF248C9CFBDe821c31A7AD72262a7"
+    },
+
+    "ETH": {
+      "name": "Etherium",
+      "key": "0xDF7D512f7A3dF248C9CFBDe821c31A7AD72262a7"
+    },
+    "BTC": {
+      "name": "Bitcoin",
+      "key": "bc1q2l3mgedme0gvt9pe0m66td8p8xgz385kvahr6c"
+    }
+  }
+}

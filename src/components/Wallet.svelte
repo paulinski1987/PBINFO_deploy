@@ -1,15 +1,24 @@
 <script>
-import {Modal} from '@sveltestrap/sveltestrap';
+  import { onMount } from 'svelte'; 
+import {
+  Modal,
+  Icon,
+  Popover
+} from '@sveltestrap/sveltestrap';
 import BTC from '$lib/img/btc.png';
 import ETH from '$lib/img/eth.png';
 import SOL from '$lib/img/sol.png';
+import {publicKeys} from '$lib/cryptoPubKeys.json';
 
 let open = false;
 const toggle = () => (open = !!!open);
 
-// export let alignBottom = "0px";
-// export let alignRight = "1rem";
+const copyKey = (coin) => {
+  navigator.clipboard.writeText(coin.key);
+  // toggle();
+};
 </script>
+
 
 <div class="wallet">
   <button id='crypto' on:click={toggle}  >
@@ -27,12 +36,31 @@ const toggle = () => (open = !!!open);
     isOpen={open} 
     {toggle}>
       <div class="addressText">
-      <span class="addy"><b>Bitcoin:</b> bc1q2l3mgedme0gvt9pe0m66td8p8xgz385kvahr6c </span>
-      <span class="addy"><b>Etherium:</b> 0xDF7D512f7A3dF248C9CFBDe821c31A7AD72262a7</span>
-      <span class="addy"><b>Solana:</b> 0xDF7D512f7A3dF248C9CFBDe821c31A7AD72262a7</span>
+      <span class="addy"><b>{publicKeys.BTC.name}: </b>{publicKeys.BTC.key} <button class="clipboard" on:click={() => copyKey(publicKeys.BTC)}><Icon  id="BTC" name="clipboard-check"/></button></span>
+      <span class="addy"><b>{publicKeys.ETH.name}: </b>{publicKeys.ETH.key} <button class="clipboard" on:click={() => copyKey(publicKeys.ETH)}><Icon id="ETH" name="clipboard-check"/></button></span>
+      <span class="addy"><b>{publicKeys.SOL.name}: </b>{publicKeys.SOL.key} <button class="clipboard" on:click={() => copyKey(publicKeys.SOL)}><Icon id="SOL" name="clipboard-check"/></button></span>
+
+      <Popover 
+      target="BTC" 
+      placement="top" 
+      dismissible
+      hideOnOutsideClick>BTC copied to clipboard!</Popover>
+
+      <Popover 
+      target="ETH" 
+      placement="top" 
+      dismissible
+      hideOnOutsideClick>ETH copied to clipboard!</Popover>
+
+      <Popover 
+      target="SOL" 
+      placement="top" 
+      dismissible
+      hideOnOutsideClick>SOL copied to clipboard!</Popover>
       </div>
   </Modal>
 </div>
+
 
 <style lang='scss'>
   
@@ -47,6 +75,12 @@ const toggle = () => (open = !!!open);
 }
 .addressText {
   word-wrap: break-word !important;
+}
+
+.clipboard {
+  border: none;
+  background: none;
+  size: 1em;
 }
 
 .addy {

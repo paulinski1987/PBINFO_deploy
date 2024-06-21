@@ -8,9 +8,6 @@ import {
 import BTC from '$lib/img/btc.png';
 import ETH from '$lib/img/eth.png';
 import SOL from '$lib/img/sol.png';
-import BTCQR from '$lib/img/qrCodes/BTC.png';
-import ETHQR from '$lib/img/qrCodes/ETH.png';
-import SOLQR from '$lib/img/qrCodes/SOL.png';
 import {publicKeys} from '$lib/cryptoPubKeys.json';
 
 let open = false;
@@ -40,13 +37,8 @@ const copyKey = (coin) => {
     {toggle}>
       <div class="addressText">
       <span class="addy"><b>{publicKeys.BTC.name}: </b>{publicKeys.BTC.key} <button class="clipboard" on:click={() => copyKey(publicKeys.BTC)}><Icon  id="BTC" name="clipboard-check"/></button></span>
-      <img class="QRCode" src={BTCQR} alt="BTC QR code" />
-      
       <span class="addy"><b>{publicKeys.ETH.name}: </b>{publicKeys.ETH.key} <button class="clipboard" on:click={() => copyKey(publicKeys.ETH)}><Icon id="ETH" name="clipboard-check"/></button></span>
-      <img class="QRCode" src={ETHQR} alt="ETH QR code" />
-
       <span class="addy"><b>{publicKeys.SOL.name}: </b>{publicKeys.SOL.key} <button class="clipboard" on:click={() => copyKey(publicKeys.SOL)}><Icon id="SOL" name="clipboard-check"/></button></span>
-      <img class="QRCode" src={SOLQR} alt="SOL QR code" />
 
       <Popover 
       target="BTC" 
@@ -106,11 +98,4 @@ const copyKey = (coin) => {
   border-radius: 0.5rem;
   transform:scale(1.15);
 }
-
-.QRCode {
-  max-width: 182px;
-  margin-right: 0;
-  margin-left: auto;
-}
-
 </style>

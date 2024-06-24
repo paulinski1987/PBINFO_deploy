@@ -5,17 +5,10 @@
     Row,
     Col
   } from '@sveltestrap/sveltestrap';
-// import AppBody from '../../components/AppBody.svelte';
-// import { content } from '$lib/content.json';
-// import Quote from '../../components/about/Quote.svelte';
-// import { reviews } from '$lib/Reviews.json';
-import Profile from '$lib/img/profile.png';
-import  Wallet  from '../../components/Wallet.svelte';
-
-
+import Logo from '$lib/img/logo.png';
 
 </script>
-<Container fluid>
+<Container xxl>
   <Row>
     <Col>
       <h2 class="text-center mt-3">About Info</h2>
@@ -24,7 +17,7 @@ import  Wallet  from '../../components/Wallet.svelte';
   </Row>
   <Row>
     <Col sm="12" md="6">
-      <Image fluid  id="profileImg" src={Profile} style=" border: 4px solid #f37022; border-radius: 1em;"/>
+      <Image fluid  id="profileImg" src={Logo} style=" border: 4px solid #f37022; border-radius: 1em; max-width: 300px;"/>
     </Col>
 
     <Col sm="12" md="6">
@@ -56,10 +49,7 @@ import  Wallet  from '../../components/Wallet.svelte';
 
     
 </Container>
-<Wallet --position="sticky" --alignBottom="5px" --alignLeft="50px" />
-<!-- <Col>
 
-</Col> -->
 <style>
   hr {
     max-width: 600px;

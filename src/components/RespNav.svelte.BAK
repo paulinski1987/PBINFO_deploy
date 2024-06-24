@@ -9,10 +9,9 @@
     NavItem,
     NavLink,
     colorMode, 
-    useColorMode, 
-    Button
+    useColorMode
+ 
   } from "@sveltestrap/sveltestrap";
-  import Wallet from "./Wallet.svelte";
 
 let modeText = $colorMode == 'light'? "Dark" : "Light";
   let isOpen = false;
@@ -22,20 +21,17 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
 
   const closeMenu = () => { isOpen = false; };
 
-  let lightbulb = "lightbulb-off";
-
   function DarkModeSwitch () {
     if ($colorMode == 'light') {
       modeText = "Dark";
       useColorMode('dark');
-      lightbulb = "lightbulb-off";
     } else {
       modeText = "Light";
       useColorMode('light');
-      lightbulb = "lightbulb-fill";
     }
     closeMenu();
 
+    // $colorMode == 'light'? useColorMode('dark') : useColorMode('light');
     
   }
 
@@ -63,10 +59,8 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
               <NavLink href="/contact" on:click={closeMenu}><span class="navlink">Contact</span></NavLink>
           </NavItem>
           <NavItem>
-              <Button style="margin: 0;" outline color="white"  on:click={DarkModeSwitch}><Icon name={lightbulb}/></Button>
-          </NavItem>
-          <NavItem>
-            <Wallet --position="absolute" --alignBottom="5px" --alignRight="5px" />
+          <!-- <Button color="primary" on:click={DarkModeSwitch}><Icon name="circle-half"/></Button> -->
+            <button on:click={DarkModeSwitch}><Icon name="circle-half"/></button>
           </NavItem>
       </Nav>
     </Collapse>
@@ -115,9 +109,6 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
 
 #toggleBtn {
   background: none;
-  border: none;
-  outline: none;
-  box-shadow: none;
 } 
 
 </style>

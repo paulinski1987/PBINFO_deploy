@@ -6,7 +6,6 @@
 	*/
 	// import Fullpage from 'svelte-fullpage.js';
 	import  ServiceCard  from '../../components/services/ServiceCard.svelte';
-	import  Wallet  from '../../components/Wallet.svelte';
 	import {services} from '$lib/serviceDesc.json';
 	import { onMount } from 'svelte';
 
@@ -39,13 +38,8 @@ fullpage.js used for css3 snap effect on scrolling
 	<div class="section S6 fp-auto-height" data-anchor="more"><div class="SVCard"><ServiceCard SVName={services.more.name} SVP1={services.more.p1} SVList={services.more.SVList} colorChoice={"primary"} up={services.more.up} down={services.more.down} /></div></div>
 </svelte:component>
 
-<Wallet --position="sticky" --alignBottom="5px" --alignLeft="1rem" />
-
 <style>
-/* 
-fullpage.js used for css3 snap effect on scrolling
-	 * https://github.com/alvarotrigo/fullPage.js
-	 * License: gplv3-license' */
+
 .FP {
     opacity: 0.4;
   }

@@ -11,7 +11,6 @@
   Col 
 } from '@sveltestrap/sveltestrap';
 import AppBody from "../../components/AppBody.svelte";
-import Wallet from '../../components/Wallet.svelte';
   import { content } from '$lib/content.json';
 let validated = false;
 </script>
@@ -68,41 +67,7 @@ let validated = false;
       </div>
     </form>
   </div>
-  <Wallet --position="sticky" --alignBottom="5px" --alignLeft="1rem" />
-<!-- <Col></Col>
-<Container fluid>
-  <Form {validated} on:submit={(e) => e.preventDefault()}>
-    <Row>
-      <Col sm="12" md="6">
-        <FormGroup floating>
-          <Input placeholder="Enter email name" type="text" required feedback="Please enter your name" color="info"/>
-          <div slot="label">
-            <Badge>Name:</Badge>
-          </div>
-        </FormGroup>
-      </Col>
-      <Col sm="12" md="6">
-        <FormGroup floating>
-          <Input placeholder="Enter email address" type="email" required feedback="Email required e.g john.doe@email.ca"/>
-          <div slot="label">
-            <Badge>Email:</Badge>
-          </div>
-        </FormGroup>
-      </Col>
-    </Row>
 
-    <Row>
-      <Col>
-        <Button type="submit" on:click={() => (validated = true)}>Fake Submit</Button>
-      </Col>
-    </Row>
-  </Form>
-</Container>
-
-   -->
-
-  
-    
 <style>
   h2 {
   color: #f37022;
@@ -117,4 +82,14 @@ hr {
     text-align: center;
     /* color: #f37022; */
   }
+
+
+  input[type='text'] {
+    border-radius: 0.75rem;
+  }
+  input[type='text']:focus {
+    border: 2px solid #00F;
+    border-radius: 0.75rem;
+  }
+
 </style>

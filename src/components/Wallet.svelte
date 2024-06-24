@@ -3,7 +3,8 @@
 import {
   Modal,
   Icon,
-  Popover
+  Popover,
+  Tooltip
 } from '@sveltestrap/sveltestrap';
 import BTC from '$lib/img/btc.png';
 import ETH from '$lib/img/eth.png';
@@ -23,7 +24,7 @@ const copyKey = (coin) => {
 </script>
 
 
-<div class="wallet">
+<div class="wallet ml-5">
   <button id='crypto' on:click={toggle}  >
     <img src={BTC} alt="BTC logo" class='cryptoLogo'/>
     <img src={ETH} alt="ETH logo" class='cryptoLogo'/>
@@ -41,12 +42,15 @@ const copyKey = (coin) => {
       <div class="addressText">
       <span class="addy"><b>{publicKeys.BTC.name}: </b>{publicKeys.BTC.key} <button class="clipboard" on:click={() => copyKey(publicKeys.BTC)}><Icon  id="BTC" name="clipboard-check"/></button></span>
       <img class="QRCode" src={BTCQR} alt="BTC QR code" />
-      
       <span class="addy"><b>{publicKeys.ETH.name}: </b>{publicKeys.ETH.key} <button class="clipboard" on:click={() => copyKey(publicKeys.ETH)}><Icon id="ETH" name="clipboard-check"/></button></span>
       <img class="QRCode" src={ETHQR} alt="ETH QR code" />
 
       <span class="addy"><b>{publicKeys.SOL.name}: </b>{publicKeys.SOL.key} <button class="clipboard" on:click={() => copyKey(publicKeys.SOL)}><Icon id="SOL" name="clipboard-check"/></button></span>
       <img class="QRCode" src={SOLQR} alt="SOL QR code" />
+
+      <Tooltip animation delay={0} isOpen={false} placement='top' target='SOL' children='Copy SOL address'/>
+      <Tooltip animation delay={0} isOpen={false} placement='top' target='ETH' children='Copy ETH address' />
+      <Tooltip animation delay={0} isOpen={false} placement='top' target='BTC' children='Copy BTC address' />
 
       <Popover 
       target="BTC" 
@@ -74,13 +78,15 @@ const copyKey = (coin) => {
 <style lang='scss'>
   
 .cryptoLogo {
-  max-width: 2em;
+  display: block;
+  max-width: 1.5em;
 }
 .wallet {
   display: block;
   position: var(--position) !important;
   bottom: var(--alignBottom);
   left: var(--alignLeft) !important;
+  right: var(--alignRight);
 }
 .addressText {
   word-wrap: break-word !important;
@@ -108,7 +114,7 @@ const copyKey = (coin) => {
 }
 
 .QRCode {
-  max-width: 182px;
+  max-width: 100px;
   margin-right: 0;
   margin-left: auto;
 }

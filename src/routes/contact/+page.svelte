@@ -27,11 +27,11 @@ let success = '';
       <div class="col text-center">
         <p>To inquire about your project please email me at <a
             href="mailto:mathewp9876@protonmail.com">mathewp9876@protonmail.com</a>, give me a call at <a
-            href="tel:18257338381">1-825-733-8381</a>, or fill out the contact form below and I will get back to you.</p>
+            href="tel:18257338381">1-825-733-8381</a>, or <s>fill out the contact form below</s> and I will get back to you.</p>
             <AppBody content={content.contact} />
       </div>
     </div>
-    <form id="contact" method="POST">
+    <form id="contact" class="blockOutDisabled" method="POST">
         <div class="text-center" style="color: #F00; min-width:4em;">{warning}</div>
         <div class="text-center" style="color: #0F0; min-width:4em;">{success}</div>
       <div class="row">
@@ -95,6 +95,9 @@ let success = '';
   </div>
 
 <style>
+  .blockOutDisabled {
+    /* opacity: 0.2; */
+  }
   h2 {
   color: #f37022;
 }

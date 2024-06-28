@@ -31,7 +31,7 @@ let success = '';
             <AppBody content={content.contact} />
       </div>
     </div>
-    <form id="contact" class="blockOutDisabled" method="POST">
+    <form id="contact" method="POST">
         <div class="text-center" style="color: #F00; min-width:4em;">{warning}</div>
         <div class="text-center" style="color: #0F0; min-width:4em;">{success}</div>
       <div class="row">
@@ -95,9 +95,6 @@ let success = '';
   </div>
 
 <style>
-  .blockOutDisabled {
-    /* opacity: 0.2; */
-  }
   h2 {
   color: #f37022;
 }

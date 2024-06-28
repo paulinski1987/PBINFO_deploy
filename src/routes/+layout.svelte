@@ -1,6 +1,12 @@
 <script>
   import RespNav from '../components/RespNav.svelte';
 </script>
+
+<svelte:head>
+  <title>Handyman Services</title>
+  <meta name='description' content='Handyman services for Calgary, Okotoks, High River, Black Diamond and Turner Valley' />
+</svelte:head>
+
 <div>
 <div id="RespNav" class="sticky-top">
   <RespNav />

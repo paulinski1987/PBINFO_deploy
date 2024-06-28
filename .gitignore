@@ -11,3 +11,4 @@ vite.config.ts.timestamp-*
 /misc
 TODO.txt
 /backups
+./src/lib/Reviews.json

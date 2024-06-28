@@ -3,13 +3,13 @@
     "reno": {
       "name": "Repairs & Renovations",
       "SVList": [
-        "Demolition",
         "Wood & aluminum framing",
         "Drywall installation & patching",
         "Painting & staining",
         "Baseboards",
         "Wood panneling",
         "Wood refinishing",
+        "Vinyl siding",
         "Weather stripping & caulking"
       ],
       "up": ["", "#"], "down": ["arrow-down-circle", "#fixture"]

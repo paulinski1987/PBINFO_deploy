@@ -26,7 +26,7 @@ let success = '';
     <div class="row">
       <div class="col text-center">
         <p>To inquire about your project please <a
-            href="mailto:paulbanks.handyman@gmail.com">send me an email</a>, or call me at <a
+            href="mailto:mathewp9876@protonmail.com">send me an email</a>, or call me at <a
             href="tel:18257338381">1-825-733-8381</a> to discuss your project or repair.</p>
             <AppBody content={content.contact} />
       </div>

@@ -1,9 +1,9 @@
 {
   "content": {
     "home": {
-      "h2": "Paul Banks, Handyman",
-      "sub": "Serving the Calgary Metropolitan Region",
-      "body": "This site is still under construction. Head over to the services page to see what I can offer."
+      "h2": "Paul Banks Handyman Services",
+      "sub": "Calgary, Okotoks, High River, Diamond Valley",
+      "body": "This site is still under construction. Head over to the services page for information on services provided."
     },
     "about": {
       "h2": "What the sites aboot",
@@ -15,7 +15,7 @@
     },
     "contact": {
       "h2": "Under Construction!",
-      "body": "This page is currently being built so the below form does not work yet; but the phone number and email listed above are open."
+      "body": "This page is currently being built so the below form does not work yet, but the phone number and email listed above are open."
     }
   }
 }

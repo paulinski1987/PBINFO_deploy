@@ -29,7 +29,6 @@ import Logo from '$lib/img/logo.png';
 
       <p class="text-left">When it comes to my work as a handyman I bring diverse skills appropriate for many of the projects a homeowner would like.</p>
 
-      <p class="text-left">As a sidenote I also do a bit of web development and built this website myself, so should you ever require a website give me a call!</p>
     </Col>
   </Row>
   <hr class="mt-4"/>

@@ -1,5 +1,5 @@
 .DS_Store
-node_modules
+./node_modules
 /build
 /.svelte-kit
 /package
@@ -9,6 +9,7 @@ node_modules
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 /misc
-TODO.txt
+./TODO.txt
 /backups
 ./src/lib/Reviews.json
+./src/routes/testAnimation/+page.svelte

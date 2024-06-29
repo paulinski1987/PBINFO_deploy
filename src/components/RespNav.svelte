@@ -68,6 +68,10 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
           <NavItem>
             <Wallet --position="absolute" --alignBottom="5px" --alignRight="5px" />
           </NavItem>
+          
+          <!-- <NavItem>
+            <NavLink href="/testAnimation" on:click={closeMenu}><span class="navlink">TestAnimation</span></NavLink>
+          </NavItem> -->
       </Nav>
     </Collapse>
   </Navbar>

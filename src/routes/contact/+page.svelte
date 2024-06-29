@@ -25,9 +25,9 @@ let success = '';
   <div class="container-fluid">
     <div class="row">
       <div class="col text-center">
-        <p>To inquire about your project please email me at <a
-            href="mailto:mathewp9876@protonmail.com">mathewp9876@protonmail.com</a>, give me a call at <a
-            href="tel:18257338381">1-825-733-8381</a>, or <s>fill out the contact form below</s> and I will get back to you.</p>
+        <p>To inquire about your project please <a
+            href="mailto:paulbanks.handyman@gmail.com">send me an email</a>, or call me at <a
+            href="tel:18257338381">1-825-733-8381</a> to discuss your project or repair.</p>
             <AppBody content={content.contact} />
       </div>
     </div>
@@ -61,11 +61,17 @@ let success = '';
       <div class="row mt-5">
         <div class="col-sm text-center">
           <div>
-            <label for="description">How may we help you?</label>
-            <textarea disabled bind:value={DESC} class="form-control inputColor" name="description" id="description" cols="30" rows="10" required></textarea>
+            <label for="description">What can I do for you?</label>
+            <textarea disabled bind:value={DESC} class="form-control inputColor mb-2" name="description" id="description" cols="30" rows="10" required></textarea>
           </div>
         </div>
+        <div class="col-sm text-center">
+        <label for="fileUpload">&#40;Optional&#41; Photos/Documents:</label>
+        <input disabled type="file" class="form-control inputColor mb-2" id="fileUpload">
+        </div>
       </div>
+
+
       <div class="row mt-5">
         <div class="col text-center">
           <button disabled id="submit" class="btn btn-primary" on:click={async (e) => {

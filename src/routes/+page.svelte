@@ -1,7 +1,13 @@
-<!-- Homepage -->
 <script>
-  import AppBody from "../components/AppBody.svelte";
-  import { content } from '$lib/content.json';
+  import AnimatedLogo from "../components/animation/AnimatedLogo.svelte";
 </script>
 
-<AppBody content={content.home} />
+<div class="container-fluid overflowHack">
+  <AnimatedLogo />
+</div>
+
+<style>
+  .overflowHack {
+    overflow: hidden;
+  }
+</style>

@@ -31,7 +31,7 @@ let success = '';
             <AppBody content={content.contact} />
       </div>
     </div>
-    <form id="contact" method="POST">
+    <form id="contact" method="POST" style="opacity: 0.2">
         <div class="text-center" style="color: #F00; min-width:4em;">{warning}</div>
         <div class="text-center" style="color: #0F0; min-width:4em;">{success}</div>
       <div class="row">

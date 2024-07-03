@@ -51,7 +51,7 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
       <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
         <Nav class="ms-auto" navbar>
           <NavItem>
-              <NavLink href="/" on:click={closeMenu}><span class="navlink">Home</span></NavLink>
+              <NavLink href="/home" on:click={closeMenu}><span class="navlink">Home</span></NavLink>
           </NavItem>
           <NavItem>
               <NavLink href="/services" on:click={closeMenu}><span class="navlink">Services</span></NavLink>
@@ -68,10 +68,6 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
           <NavItem>
             <Wallet --position="absolute" --alignBottom="5px" --alignRight="5px" />
           </NavItem>
-          
-          <!-- <NavItem>
-            <NavLink href="/testAnimation" on:click={closeMenu}><span class="navlink">TestAnimation</span></NavLink>
-          </NavItem> -->
       </Nav>
     </Collapse>
   </Navbar>
@@ -94,6 +90,7 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
 #navBar {
   border-bottom: 2px solid #f37022 !important;
   border-color: #f37022 !important;
+  overflow: hidden;
 }
 
 

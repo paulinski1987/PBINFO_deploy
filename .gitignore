@@ -12,4 +12,5 @@ vite.config.ts.timestamp-*
 ./TODO.txt
 /backups
 ./src/lib/Reviews.json
-./src/routes/testAnimation/+page.svelte
+./src/routes/testAnimation
+./src/components/RespNav.svelte.BAK

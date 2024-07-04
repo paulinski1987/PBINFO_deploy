@@ -879,12 +879,15 @@
         transform: scale(2);
         backface-visibility: hidden;
 
+        @media screen and (max-width: 350px) {
+            transform: scale(1.2);
+        }
         @media screen and (max-width: 500px) {
             transform: scale(1.5);
         }
 
         @media screen and (min-width: 768px) {
-            transform: scale(3);
+            transform: scale(4);
         }
     }
 
@@ -900,7 +903,7 @@
 
     .wrapper {
         opacity: 0;
-        width: 90%;
+        /* width: 90%; */
         margin: 5em, auto, auto, auto;
         display: block;
         text-align: center;

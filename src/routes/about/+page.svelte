@@ -6,6 +6,7 @@
     Col
   } from '@sveltestrap/sveltestrap';
 import Logo from '$lib/img/logo.png';
+import githubIcon from '$lib/img/githubLogo.png';
 
 </script>
 <Container xxl>
@@ -45,6 +46,13 @@ import Logo from '$lib/img/logo.png';
   </Row>
     {/each} -->
 
+  <div class="github">
+    <small class='text-center'>If you like the websitee check out my GitHub profile:</small>
+    <a href="https://github.com/paulinski1987"><img class="link" src={githubIcon}  alt="github icon link to profile"/></a>
+  </div>
+        
+
+
 
     
 </Container>
@@ -63,6 +71,18 @@ import Logo from '$lib/img/logo.png';
   color: #f37022;
 }
 
+.github {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.link {
+  width: 32px; height: 32px;
+  margin: 'auto';
+}
+.link:hover {
+  opacity: 0.8;
+}
 
 
 </style>

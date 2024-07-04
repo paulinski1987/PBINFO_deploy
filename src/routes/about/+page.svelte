@@ -72,7 +72,8 @@ import githubIcon from '$lib/img/githubLogo.png';
 }
 
 .github {
-  position: absolute;
+  /* position: relative; */
+  position: relative;
   bottom: 0;
   right: 0;
 }

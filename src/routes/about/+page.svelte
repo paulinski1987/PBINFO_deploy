@@ -5,8 +5,16 @@
     Row,
     Col
   } from '@sveltestrap/sveltestrap';
+  import  Quote  from '../../components/about/Quote.svelte';
+  import { reviews } from '$lib/Reviews.json';
 import Logo from '$lib/img/logo.png';
 import githubIcon from '$lib/img/githubLogo.png';
+import { navbarVisible } from '../store';
+import { onMount } from 'svelte';
+
+onMount(() => {
+  if ($navbarVisible == 'display: none;') navbarVisible.set('display: block;');
+});
 
 </script>
 <Container xxl>

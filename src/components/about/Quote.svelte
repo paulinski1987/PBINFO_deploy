@@ -1,23 +1,64 @@
 <script>
-export let alignment = "";
-export let review = "";
-export let client = "";
+  export let alignment = "";
+  export let review = "";
+  export let client = "";
 
-</script>
+  let overflowHidden = true;
+  let trunValClass = 'trunicatedText collapse widthFix';
+  let moreLessValue = '+Show more...'
 
-<figure class={alignment}>
-  <blockquote class="blockquote">
-    <p>
-      {review}
-    </p>
-  </blockquote>
+  function moreLess(){
+    if (overflowHidden){
+      trunValClass = 'fullText collapse';
+      moreLessValue = '-Show less';
+      overflowHidden = false;
+    } else {
+      trunValClass = 'trunicatedText collapse';
+      moreLessValue = '+Show more...';
+      overflowHidden = true;
+    }
 
-  <figcaption class="blockquote-footer">
-    {client}
-  </figcaption>
-</figure>
+  }
 
+  
+  </script>
+  
+  <figure class={alignment} id='quoteContainer'>
+    <blockquote class="blockquote quoteBody">
+      <p class={trunValClass} id='collapse'>
+        {review}
+      </p>
+      <button class="moreLess" on:click={moreLess}>{ moreLessValue }</button>
+    </blockquote>
+  
+    <figcaption class="blockquote-footer">
+      {client}
+    </figcaption>
+  </figure>
+  
+  
+  <style>
+    .quoteBody {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .trunicatedText {
+      display: block;
+      height: 3rem;
+      overflow: hidden;
+    }
 
-<style>
+    .fullText {
+      display: block;
+      overflow: auto;
+        }
+  .moreLess {
+    border: none;
+    background: none;
+  }
 
-</style>
+  #quoteContainer {
+    max-width: 800px;
+  }
+
+  </style>

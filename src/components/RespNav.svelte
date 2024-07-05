@@ -13,6 +13,7 @@
     Button
   } from "@sveltestrap/sveltestrap";
   import Wallet from "./Wallet.svelte";
+  import { navbarVisible } from '../routes/store.js';
 
 let modeText = $colorMode == 'light'? "Dark" : "Light";
   let isOpen = false;
@@ -34,9 +35,7 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
       useColorMode('light');
       lightbulb = "lightbulb-fill";
     }
-    closeMenu();
-
-    
+    closeMenu(); 
   }
 
 
@@ -45,6 +44,7 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
 <!-- fixed-top fixes pushing but fucks everything else -->
 <!-- <div class="navBar bg-dark" data-bs-theme="dark"> -->
   
+<div class="navContainer"  style={$navbarVisible}>
   <Navbar id="navBar" expand="md" container="fluid" class="navBar bg-primary" data-bs-theme="dark"> 
     <NavbarBrand href="/" class="me-auto text-left" on:click={closeMenu}><span id="navBrand">paulbanks.info</span></NavbarBrand>
     <NavbarToggler id="navBarToggler" on:click={() => isOpen = !isOpen} />
@@ -71,6 +71,7 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
       </Nav>
     </Collapse>
   </Navbar>
+</div>
 
   <div class="underline" id="underline"></div>
 
@@ -91,6 +92,7 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
   border-bottom: 2px solid #f37022 !important;
   border-color: #f37022 !important;
   overflow: hidden;
+  display: none !important;
 }
 
 
@@ -120,5 +122,7 @@ let modeText = $colorMode == 'light'? "Dark" : "Light";
   outline: none;
   box-shadow: none;
 } 
+
+
 
 </style>

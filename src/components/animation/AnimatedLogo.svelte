@@ -2,6 +2,8 @@
     import anime from "animejs";
     import { onMount } from "svelte";
     import { colorMode } from "@sveltestrap/sveltestrap";
+    import { navbarVisible } from '../../routes/store.js';
+    import { goto } from "$app/navigation";
 
     onMount(() => {
         setTimeout(() => {
@@ -51,7 +53,6 @@
                 version="1.1"
                 id="svg1"
                 xmlns="http://www.w3.org/2000/svg"
-                xmlns:svg="http://www.w3.org/2000/svg"
                 viewBox="0 0 55.562498 7.9375"
             >
                 <defs id="defs1" />
@@ -871,7 +872,15 @@
     </div>
 </div>
 <div class="enter">
-    <a href="/home" class="btn outline enterBtn">Enter Site</a>
+    <!-- <a href="/home" class="btn outline enterBtn">Enter Site</a> -->
+    <button class="btn outline enterBtn"
+    on:click={(event) => {
+        event.preventDefault();
+        navbarVisible.set('display:block;');
+        goto('/home');
+    }}
+    
+    >Enter Site</button>
 </div>
 
 <style>
@@ -886,7 +895,7 @@
             transform: scale(1.5);
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 870px) {
             transform: scale(4);
         }
     }

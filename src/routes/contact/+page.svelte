@@ -5,8 +5,13 @@ import { onMount } from "svelte";
 import AppBody from "../../components/AppBody.svelte";
 import { content } from '$lib/content.json';
 import axios from 'axios';
+import { navbarVisible } from "../store";
 const _log = console.log;
 let validated = false;
+
+onMount(() => {
+  if ($navbarVisible == 'display: none;') navbarVisible.set('display: block;');
+});
 
 
 // form data
@@ -38,7 +43,7 @@ let success = '';
         <div class="col-sm text-left">
           <div>
             <label for="name">Name:</label>
-            <input disabled bind:value={NAME} class="form-control inputColor mb-2" type="text" id="name" required>
+            <input disabled bind:value={NAME} class="form-control inputColor mb-2"  type="text" id="name" required>
           </div>
         </div>
 
@@ -116,7 +121,6 @@ hr {
   }
 
 input[type='text'] {
-    border-radius: 0.75rem;
     background-color:#eee;
     border: 2px solid rgba(0,0,0,0);
     border-radius: 0.75em;

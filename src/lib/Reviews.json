@@ -1,10 +1,9 @@
 {
   "reviews": [
-    {"client": "Jim", "review": "This guy fucking sucks", "alignment": ""},
-    {"client": "Jan", "review": "Caught him stealing my tinfoil to smoke drugs off of", "alignment": "text-center"},
-    {"client": "Joe", "review": "I think he was hitting on my wife....and daughter", "alignment": "text-end"},
-    {"client": "Julia", "review": "Pervert wouldnt stop looking down my shirt", "alignment": ""},
-    {"client": "Jared (not from subway)", "review": "Just because I look similar and have the same name I am NOT the guy from the subway commercials recently released on bail...", "alignment": "text-center"},
-    {"client": "Jeoff", "review": "Who are you? GET OUT OF MY HOUSE!", "alignment": "text-end"}
+    {
+      "client": "Livia R.", 
+      "review": "I've tried several handymen over the years, but often found that whatever the original quote I got from them, was all of a sudden more expensive due to whatever reason, and really screwed up my budgeting for the projects. When I first found Paul, he came over to see the project and gave me a price breakdown of materials needed and labour's costs. There were even times it went over the original estimate but didn't charge extra, which was very reasonable on his end. He has done many home projects for me over the years. Cleaned my gutters, done my outdoor water spouts, built my backyard fence, rebuild my deck, changed my chandler's, and my most recent large project of making a bathroom from scratch. He built the walls, installed the shower, toliet and sink. He does it all!", 
+      "alignment": ""
+    }
   ]
 }

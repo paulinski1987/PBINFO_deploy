@@ -8,10 +8,13 @@
 	import  ServiceCard  from '../../components/services/ServiceCard.svelte';
 	import {services} from '$lib/serviceDesc.json';
 	import { onMount } from 'svelte';
+	import { navbarVisible } from '../store';
 
 	let Fullpage;
 
 	onMount(async () => {
+	if ($navbarVisible == 'display: none;') navbarVisible.set('display: block;');
+	
 	const module = await import('svelte-fullpage.js');
   Fullpage = module.default;
 });

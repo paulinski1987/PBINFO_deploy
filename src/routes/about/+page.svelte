@@ -48,14 +48,14 @@ onMount(() => {
       <p class="text-center h4" style="color: #f37022;">Coming Soon!</p>
     </Col>
   </Row>
-  <!-- {#each reviews as rv}
+  {#each reviews as rv}
   <Row>
       <Quote alignment={rv.alignment} review={rv.review} client={rv.client} />
   </Row>
-    {/each} -->
+    {/each}
 
-  <div class="github">
-    <small class='text-center'>If you like the websitee check out my GitHub profile:</small>
+  <div class="github text-end">
+    <small class='text-center'>If you like the website check out my GitHub profile:</small>
     <a href="https://github.com/paulinski1987"><img class="link" src={githubIcon}  alt="github icon link to profile"/></a>
   </div>
         

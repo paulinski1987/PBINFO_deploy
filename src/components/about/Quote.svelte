@@ -4,61 +4,75 @@
   export let client = "";
 
   let overflowHidden = true;
-  let trunValClass = 'trunicatedText collapse widthFix';
-  let moreLessValue = '+Show more...'
+  let trunValClass = "trunicatedText collapse widthFix";
+  let moreLessValue = "+Show more...";
 
-  function moreLess(){
-    if (overflowHidden){
-      trunValClass = 'fullText collapse';
-      moreLessValue = '-Show less';
-      overflowHidden = false;
+  function moreLess() {
+    if (overflowHidden) {
+      if (review.length > 40) {
+        trunValClass = "fullText collapse";
+        moreLessValue = "-Show less";
+        overflowHidden = false;
+      }
     } else {
-      trunValClass = 'trunicatedText collapse';
-      moreLessValue = '+Show more...';
-      overflowHidden = true;
+      if (review.length > 40) {
+        trunValClass = "trunicatedText collapse";
+        moreLessValue = "+Show more...";
+        overflowHidden = true;
+      }
     }
-
   }
+</script>
 
-  
-  </script>
-  
-  <figure class={alignment} id='quoteContainer'>
+<div id="quoteContainer">
+  <figure class={alignment} id="quote">
     <blockquote class="blockquote quoteBody">
-      <p class={trunValClass} id='collapse'>
+      <p class={trunValClass} id="collapse">
         {review}
       </p>
-      <button class="moreLess" on:click={moreLess}>{ moreLessValue }</button>
+      {#if review.length >= 70}
+        <button class="moreLess text-end" on:click={moreLess}
+          >{moreLessValue}</button
+        >
+      {/if}
     </blockquote>
-  
     <figcaption class="blockquote-footer">
       {client}
     </figcaption>
   </figure>
-  
-  
-  <style>
-    .quoteBody {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-    .trunicatedText {
-      display: block;
-      height: 3rem;
-      overflow: hidden;
-    }
+</div>
 
-    .fullText {
-      display: block;
-      overflow: auto;
-        }
+<style>
+  .quoteBody {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  .trunicatedText {
+    display: block;
+    height: 1.5rem;
+    overflow: hidden;
+  }
+
+  .fullText {
+    display: block;
+    overflow: auto;
+  }
   .moreLess {
     border: none;
     background: none;
+    /* width: 100%; */
   }
 
   #quoteContainer {
-    max-width: 800px;
+    /* max-width: 600px; */
+    width: 100%;
+    margin: auto;
   }
 
-  </style>
+  #quote {
+    max-width: 800px;
+    margin: auto;
+  }
+
+
+</style>

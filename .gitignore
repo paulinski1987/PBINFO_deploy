@@ -4,6 +4,7 @@
 /.svelte-kit
 /package
 .env
+TODO.txt
 .env.*
 !.env.example
 vite.config.js.timestamp-*
@@ -11,6 +12,8 @@ vite.config.ts.timestamp-*
 /misc
 ./TODO.txt
 /backups
-/src/routes/testAnimation
+/src/routes/gallery/*
 /src/components/RespNav.svelte.BAK
 src/lib/FakeReviews.json
+src/lib/img/gallery/test/*
+*BAK*

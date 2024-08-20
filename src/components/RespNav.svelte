@@ -1,6 +1,7 @@
 <script>
   import {
     Icon,
+    Popover,
     Collapse,
     NavbarToggler,
     NavbarBrand,
@@ -78,6 +79,11 @@
             ><span class="navlink">Contact</span></NavLink
           >
         </NavItem>
+        <!-- <NavItem>
+          <NavLink href="/gallery" on:click={closeMenu}
+            ><span class="navlink">Gallery</span></NavLink
+          >
+        </NavItem> -->
         <NavItem>
           <Button
             style="margin: 0;"
@@ -86,7 +92,7 @@
             on:click={DarkModeSwitch}
           >
             {#if $colorMode == "light"}
-              <span style="display: block; width: 2em;">
+              <span id="modeSelectBit" style="display: block; width: 2em;">
                 <svg
                   class="w-5 h-5"
                   fill="none"
@@ -101,8 +107,17 @@
                   />
                 </svg>
               </span>
+              <Popover 
+            target="modeSelectBit"
+            animation={true}
+            dismissible={true}
+            placement="bottom"
+            trigger="hover"
+            >
+            Toggle dark mode
+          </Popover>
             {:else}
-              <span style="display: block; width: 2em;">
+              <span id="modeSelectBit" style="display: block; width: 2em;">
                 <svg
                   class="w-5 h-5"
                   fill="none"
@@ -117,6 +132,15 @@
                   />
                 </svg>
               </span>
+              <Popover 
+            target="modeSelectBit"
+            animation={true}
+            dismissible={true}
+            placement="bottom"
+            trigger="hover"
+            >
+            Toggle light mode
+          </Popover>
             {/if}
           </Button>
         </NavItem>

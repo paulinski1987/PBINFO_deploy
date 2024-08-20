@@ -41,17 +41,24 @@ fullpage.js used for css3 snap effect on scrolling
 	<div class="section S6 fp-auto-height" data-anchor="more"><div class="SVCard"><ServiceCard SVName={services.more.name} SVP1={services.more.p1} SVList={services.more.SVList} colorChoice={"primary"} up={services.more.up} down={services.more.down} /></div></div>
 </svelte:component>
 
+
+
 <style>
 
 .FP {
     opacity: 0.4;
   }
 	.SVCard {
-    display: block;
-		max-width: 800px;
-		max-height: 100vh;
+    /* TEST */
+		display: block; 
+		/* TEST */
+
+
+
+		max-width: 900px; 
+		/* max-height: 100vh; TEST  */
     /* max-height: 500px; */
-    /* height: 12em; */
+    /* min-height: 100% !important; */
 		margin:auto;
 		opacity: 0.8;
 		border:1px  solid #f37022;

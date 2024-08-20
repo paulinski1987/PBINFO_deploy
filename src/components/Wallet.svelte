@@ -30,6 +30,13 @@ const copyKey = (coin) => {
     <img src={ETH} alt="ETH logo" class='cryptoLogo'/>
     <img src={SOL} alt="SOL logo" class='cryptoLogo'/>
   </button>
+  <Popover 
+      target="crypto" 
+      placement="bottom" 
+      animation={true}
+      dismissible={true}
+      trigger="hover"
+      >Crypto</Popover>
     <Modal 
     backdrop 
     body 
@@ -38,7 +45,8 @@ const copyKey = (coin) => {
     keyboard
     header="Addresses" 
     isOpen={open} 
-    {toggle}>
+    {toggle}
+    >
       <div class="addressText">
       <span class="addy"><b>{publicKeys.BTC.name}: </b>{publicKeys.BTC.key} <button class="clipboard" on:click={() => copyKey(publicKeys.BTC)}><Icon  id="BTC" name="clipboard-check"/></button></span>
       <img class="QRCode" src={BTCQR} alt="BTC QR code" />
@@ -118,5 +126,4 @@ const copyKey = (coin) => {
   margin-right: 0;
   margin-left: auto;
 }
-
 </style>

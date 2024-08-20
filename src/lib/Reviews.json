@@ -1,16 +1,18 @@
 {
   "reviews": [
     {
-      "client": "Livia R.", 
+      "client": "Livia R, Okotoks", 
       "review": "I've tried several handymen over the years, but often found that whatever the original quote I got from them, was all of a sudden more expensive due to whatever reason, and really screwed up my budgeting for the projects. When I first found Paul, he came over to see the project and gave me a price breakdown of materials needed and labour's costs. There were even times it went over the original estimate but didn't charge extra, which was very reasonable on his end. He has done many home projects for me over the years. Cleaned my gutters, done my outdoor water spouts, built my backyard fence, rebuild my deck, changed my chandler's, and my most recent large project of making a bathroom from scratch. He built the walls, installed the shower, toliet and sink. He does it all!", 
       "alignment": ""
     },
     {
-      "client": "Patrick W",
+      "client": "Patrick W, Okotoks",
       "review": "Paul did a great job of renovating my basement to install a new bathroom, including drywalling, plumbing and installing a new shower and vanity. He did it quick and for a good price. Would definitely reccomend, and hire again in the future.",
-      "alignment": "righty"
-
-      
+      "alignment": ""
+    },
+    {
+      "client": "Gloria, Okotoks",
+      "review": "Paul did a great job on our deck! He meticulously sanded the paint away to reveal the beautiful wood underneath, then stained and sealed it to look like new! He also rebuilt our stairs and added some nice decorative touches to make it unique. We are very happy with his work and would definitely recommend him!"
     }
   ]
 }

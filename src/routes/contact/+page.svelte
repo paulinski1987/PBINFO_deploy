@@ -39,43 +39,37 @@
           <div class="text-center" style="color: #F00; min-width:4em;">{warning}</div>
           <div class="text-center" style="color: #0F0; min-width:4em;">{success}</div>
         <div class="row">
-          <div class="col-sm text-left">
+          <div class="col-sm col-md-6 text-left">
             <div>
               <label for="name">Name:</label>
               <input  bind:value={NAME} class="form-control inputColor mb-2"  type="text" id="name" required>
             </div>
           </div>
   
-          <div class="col-sm text-left">
+          <div class="col-sm col-md-6 text-left">
             <div>
               <label for="phone">Phone:</label>
               <input  bind:value={PHONE} class="form-control inputColor mb-2" type="text" id="phone" required>
             </div>
   
           </div>
-          <div class="col-sm text-left">
+          <div class="col-sm col-md-6 text-left">
             <div>
               <label for="email">Email:</label>
               <input  bind:value={EMAIL} class="form-control inputColor mb-2" type="text" id="email" required>
             </div>
           </div>
-        </div>
-  
-  
-        <div class="row mt-5">
-          <div class="col-sm text-center">
+
+          <div class="col-sm col-md-6 text-center">
             <div>
               <label for="description">What can I do for you?</label>
               <textarea  bind:value={DESC} class="form-control inputColor mb-2" name="description" id="description" cols="30" rows="10" required></textarea>
             </div>
           </div>
-          <!-- <div class="col-sm text-center">
-          <label for="fileUpload">&#40;Optional&#41; Photos/Documents:</label>
-          <input  type="file" class="form-control inputColor mb-2" id="fileUpload">
-          </div> -->
         </div>
   
   
+
         <div class="row mt-5">
           <div class="col text-center">
             <button  id="submit" class="btn btn-primary" on:click={async (e) => {

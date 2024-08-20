@@ -25,7 +25,7 @@
 </script>
 
 <div id="quoteContainer">
-  <figure class={alignment} id="quote">
+  <figure id="quote">
     <blockquote class="blockquote quoteBody">
       <p class={trunValClass} id="collapse">
         {review}

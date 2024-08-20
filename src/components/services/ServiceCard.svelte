@@ -18,22 +18,22 @@
 
 
 </script>
+  <Card body color={colorChoice || "default"} inverse class="text-center">
+    <CardHeader>
+      <CardTitle class="fullWidth h-100"><h2><b>{SVName}</b></h2></CardTitle>
+    </CardHeader>
+    <CardBody>
+      <CardText>{SVP1}</CardText>
+      <CardText>{SVP2}</CardText>
+      <ul>
+        {#each SVList as SV}
+        <li><b>{SV}</b></li>
+        {/each}
+      </ul>
+      <a href={up[1] || "#"} class='up'><Icon name={up[0] || ""}/></a><a href={down[1] || "#"} class='down'><Icon name={down[0] || ""}/></a>
+    </CardBody>
+  </Card>
 
-<Card body color={colorChoice || "default"} inverse class="text-center">
-  <CardHeader>
-    <CardTitle class="fullWidth"><h2><b>{SVName}</b></h2></CardTitle>
-  </CardHeader>
-  <CardBody>
-    <CardText>{SVP1}</CardText>
-    <CardText>{SVP2}</CardText>
-    <ul>
-      {#each SVList as SV}
-      <li><b>{SV}</b></li>
-      {/each}
-    </ul>
-    <a href={up[1] || "#"} class='up'><Icon name={up[0] || ""}/></a><a href={down[1] || "#"} class='down'><Icon name={down[0] || ""}/></a>
-  </CardBody>
-</Card>
 
 <style>
 li {

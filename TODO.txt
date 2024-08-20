@@ -9,16 +9,20 @@ Better pics
 
 Reviews
 
-SPecific wording such as "change toilets, install sinks" - sort of check
+Specific wording such as "change toilets, install sinks" - sort of check
 -------------------------------------------------------------
-Change to new email done
+Change to new email DONE
 
-Move web dev note to another section, deleted
+Move web dev note to another section, DELETED
 
 Main page show before and after photos
 
 non shitty pictures
 
-How may I help you, not web - done
+How may I help you, not web - DONE
 
-file upload sort of done
+file upload sort of DONE
+
+light/dark mode toggle switch tooltip DONE
+
+Set up contact form for laptop/desktop

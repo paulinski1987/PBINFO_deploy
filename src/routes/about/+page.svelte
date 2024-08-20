@@ -26,7 +26,7 @@ onMount(() => {
   </Row>
   <Row>
     <Col sm="12" md="6">
-      <Image fluid  id="profileImg" src={Logo} style=" border: 4px solid #f37022; border-radius: 1em; max-width: 300px;"/>
+      <Image fluid  id="profileImg" src={Logo} style=" border: 4px solid #f37022; border-radius: 1em; max-width: 300px; margin-bottom: 2em;"/>
     </Col>
 
     <Col sm="12" md="6">
@@ -45,13 +45,13 @@ onMount(() => {
     <Col>
       <h2 class=text-center>Customer Reviews</h2>
       <hr />
-      <p class="text-center h4" style="color: #f37022;">Coming Soon!</p>
     </Col>
   </Row>
   {#each reviews as rv}
   <Row>
       <Quote alignment={rv.alignment} review={rv.review} client={rv.client} />
   </Row>
+    <hr />
     {/each}
 
   <div class="github text-end">

@@ -17,3 +17,4 @@ vite.config.ts.timestamp-*
 src/lib/FakeReviews.json
 src/lib/img/gallery/test/*
 *BAK*
+./workingText.txt

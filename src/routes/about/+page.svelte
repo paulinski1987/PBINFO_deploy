@@ -43,7 +43,7 @@ onMount(() => {
   <hr class="mt-4"/>
   <Row>
     <Col>
-      <h2 class=text-center>Customer Reviews</h2>
+      <h2 class=text-center>Testimonials</h2>
       <hr />
     </Col>
   </Row>
@@ -77,6 +77,7 @@ onMount(() => {
 
   h2 {
   color: #f37022;
+  font-weight:bolder;
 }
 
 .github {
@@ -92,6 +93,8 @@ onMount(() => {
 .link:hover {
   opacity: 0.8;
 }
-
+p {
+    font-size: 1.2rem;
+  }
 
 </style>

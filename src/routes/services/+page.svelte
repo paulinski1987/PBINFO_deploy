@@ -93,7 +93,9 @@ fullpage.js used for css3 snap effect on scrolling
 	.S6 {
 		background-image: url('./img/paulBalcony.png');
 	}
-
+  p {
+    font-size: 1.2rem;
+  }
 
 
 	@media only screen and (max-width:500px) {

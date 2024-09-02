@@ -65,4 +65,7 @@ h2 b {
 .down:hover {
   color: #fff;
 }
+p {
+  font-size: 1.2rem;
+}
 </style>

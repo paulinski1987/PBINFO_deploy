@@ -4,7 +4,7 @@
   import { content } from '$lib/content.json';
   import { navbarVisible } from "../store";
   import { onMount } from "svelte";
-  import { Container } from '@sveltestrap/sveltestrap';
+  // import { Container } from '@sveltestrap/sveltestrap';
   onMount(() => {
   if ($navbarVisible == 'display: none;') navbarVisible.set('display: block;');
 });
@@ -13,31 +13,34 @@
 <!-- <AppBody content={content.home} /> -->
 
 
-<Container fluid>
+<div class="container">
   <h2 class="text-center mt-3" >Paul Banks Handyman Services</h2>
   <h5 class="text-center">
     <small class="text-body-secondary">Calgary, Okotoks, High River, Diamond Valley</small>
   </h5>
   <hr />
-  <div class="content text-center">
-    <p>Welcome to Paul Banks Handyman Services. I am still working on finishing up the website but for now you can:</p>
-    <ul>
-      <li>
-        Take a look at many of the services I offer on the <a href="/services">Services</a> page.
-      </li>
-      <li>
-        Read a little bit about me or read some client reviews on the <a href="/about">About</a> page.
-      </li>
-      <li>
-        Get my phone number, email, or submit a service request on the <a href="/contact">Contact page.</a>
-      </li>
-    </ul>
+  <div class="content">
+
+    <p>I'm not a fan of long introductions so let's get o what's important for a homeowner.</p>
+
+    <p>I provide a wide range of interior and exterior maintenance, repair and renovation services. Aesthetics are just as important as functionality and take a lot of pride in the quality of my work.</p>
+
+    <p>I am fully insured, fulfill my commitments, fairness and honesty are strong values of mine.</p>
+
+    <p>You can get an overview of some of the work I can do (plus some nifty images) in the <a href="/services">Services</a> section. If you do not see what you need listed the Contact page has a convenient service request form. I do my best to respond to all requests the same day they are made, preferably within a few hours.</p>
+
+    <p>The <a href="/about">About</a> section has some testimonials from my valued clients and a small section about myself. </p>
+
+    <p>Thank you for considering my services. I hope to hear from you soon!</p>
+
+    <p class="text-end">- Paul Banks</p>
   </div>
-</Container>
+</div>
 
 <style>
   h2 {
     color: #f37022;
+    font-weight:bolder;
   }
   hr {
     max-width: 600px;
@@ -58,5 +61,15 @@
   .content ul li a {
     color: #f37022;
     text-decoration: none;
+    
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+  a {
+    text-decoration: none;
+    color: #f37022;
+    font-weight: bolder;
   }
 </style>

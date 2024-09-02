@@ -105,6 +105,7 @@
   <style>
     h2 {
     color: #f37022;
+    font-weight: bolder;
   }
   
   
@@ -119,16 +120,32 @@
   
   input[type='text'] {
       background-color:#eee;
-      border: 2px solid rgba(0,0,0,0);
+      /* border: 2px solid rgba(0,0,0,0); */
+      border: 1px solid #000;
       border-radius: 0.75em;
     } 
     input[type='text']:focus {
       background-color:#fff;
-      border: 2px solid #00F;
+      border: 3px solid #00F;
+      border-radius: 0.75rem;
+    }
+
+    textarea {
+      background-color:#eee;
+      /* border: 2px solid rgba(0,0,0,0); */
+      border: 1px solid #000;
+      border-radius: 0.75em;
+    } 
+    textarea:focus {
+      background-color:#fff;
+      border: 3px solid #00F;
       border-radius: 0.75rem;
     }
   
   label {
     background-color: rgba(f,f,f,1);
+  }
+  p {
+    font-size: 1.2rem;
   }
   </style>

@@ -36,9 +36,10 @@
         >
       {/if}
     </blockquote>
-    <figcaption class="blockquote-footer">
-      {client}
-    </figcaption>
+    <!-- <figcaption class="blockquote-footer">
+      <span class="client primary">{client}</span>
+    </figcaption> -->
+    <p>{client}</p>
   </figure>
 </div>
 
@@ -74,5 +75,11 @@
     margin: auto;
   }
 
+  p {
+    font-size: 1.2rem;
+  }
 
+  .client {
+    /* font-weight:bolder; */
+  }
 </style>

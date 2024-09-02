@@ -23,7 +23,7 @@
 
     <p>I'm not a fan of long introductions so let's get to what's important for a homeowner.</p>
 
-    <p>I provide a wide range of interior and exterior maintenance, repair and renovation services. Aesthetics are just as important as functionality and take a lot of pride in the quality of my work.</p>
+    <p>I provide a wide range of interior and exterior maintenance, repair and renovation services. Aesthetics are just as important as functionality and I take a lot of pride in the quality of my work.</p>
 
     <p>I am fully insured, fulfill my commitments, fairness and honesty are important to me. </p>
 

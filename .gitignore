@@ -10,11 +10,11 @@ TODO.txt
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 /misc
-./TODO.txt
+TODO.txt
 /backups
 /src/routes/gallery/*
 /src/components/RespNav.svelte.BAK
 src/lib/FakeReviews.json
 src/lib/img/gallery/test/*
 *BAK*
-./workingText.txt
+workingText.txt

@@ -1,13 +1,11 @@
 <script>
   import RespNav from '../components/RespNav.svelte';
-  import { ModeWatcher } from "mode-watcher";
 </script>
 
 <svelte:head>
   <title>Handyman Services</title>
   <meta name='description' content='Handyman services for Calgary, Okotoks, High River, Black Diamond and Turner Valley' />
 </svelte:head>
-<ModeWatcher />
 <div>
 <div id="RespNav" class="sticky-top">
   <RespNav />

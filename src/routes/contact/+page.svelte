@@ -24,14 +24,14 @@
   
   </script>
   
-  <h2 class="text-center mt-3">Contact Me</h2>
+  <h2 class="text-center mt-3">Service Requests</h2>
   <hr />
   
     <div class="container-fluid">
       <div class="row">
         <div class="col text-center">
           <p>To inquire about your project please <a
-              href="mailto:mathewp9876@protonmail.com">send me an email</a>, call me at <a
+              href="mailto:handyman@protonmail.com">send me an email</a>, call me at <a
               href="tel:18257338381">1-825-733-8381</a>, or fill out the form below and I will respond within 24 hours.</p>
         </div>
       </div>

@@ -92,7 +92,7 @@
                 DESC = '';
               });
               
-                _log('TADA'); //debug
+                // _log('TADA'); //debug
             }}
 
             

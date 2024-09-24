@@ -28,6 +28,9 @@
 	}
 
 </script>
+<svelte:head>
+	<title>Available Services</title>
+</svelte:head>
 <!-- 
 fullpage.js used for css3 snap effect on scrolling
 	 * https://github.com/alvarotrigo/fullPage.js

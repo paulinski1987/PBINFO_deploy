@@ -23,7 +23,9 @@
   let success = '';
   
   </script>
-  
+  <svelte:head>
+    <title>Contact Information</title>
+  </svelte:head>
   <h2 class="text-center mt-3">Service Requests</h2>
   <hr />
   

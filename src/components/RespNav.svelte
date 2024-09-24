@@ -13,6 +13,7 @@
     useColorMode,
     Button,
   } from "@sveltestrap/sveltestrap";
+  import { onMount } from "svelte";
   import Wallet from "./Wallet.svelte";
   import { navbarVisible } from "../routes/store.js";
 

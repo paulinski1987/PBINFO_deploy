@@ -13,6 +13,7 @@ vite.config.ts.timestamp-*
 TODO.txt
 /backups
 /src/routes/gallery/*
+/src/routes/servicesNew/*
 /src/components/RespNav.svelte.BAK
 src/lib/FakeReviews.json
 src/lib/img/gallery/test/*

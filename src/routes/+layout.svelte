@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Handyman Services</title>
+  <title>PB-HS Welcome!</title>
   <meta name='description' content='Handyman services for Calgary, Okotoks, High River, Black Diamond and Turner Valley' />
   <meta name="google-site-verification" content="1iOv3wgwnaCIsEteH7V_rQx_42h-G38Y2y4v9vMrbeE" />
 </svelte:head>

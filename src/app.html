@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" >
+<html lang="en" data-bs-theme="light" id="mode">
 	<head>
 		<meta name="google-site-verification" content="1iOv3wgwnaCIsEteH7V_rQx_42h-G38Y2y4v9vMrbeE" />
 		<meta charset="utf-8" />
@@ -12,14 +12,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover"  data-bs-theme="light" id="body">
+	<body data-sveltekit-preload-data="hover" id="body">
 		<div style="display: contents">%sveltekit.body%</div>
 
 		<script>
 			if (window.matchMedia('(prefers-color-scheme: dark)')){
-				document.getElementById('body').dataset.bsTheme = 'dark';
+				document.getElementById('mode').dataset.bsTheme = 'dark';
 			} else {
-				document.getElementById('body').dataset.bsTheme = 'light';
+				document.getElementById('mode').dataset.bsTheme = 'light';
 			}
 		</script>
 	</body>

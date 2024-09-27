@@ -1,5 +1,5 @@
 .DS_Store
-./node_modules
+./node_modules/*
 /build
 /.svelte-kit
 /package
@@ -19,3 +19,4 @@ src/lib/FakeReviews.json
 src/lib/img/gallery/test/*
 *BAK*
 workingText.txt
+/src/components/services/GridCard.svelte

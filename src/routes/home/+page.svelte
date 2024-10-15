@@ -1,10 +1,7 @@
 <!-- Homepage -->
 <script>
-  // import AppBody from "../../components/AppBody.svelte";
-  import { content } from '$lib/content.json';
   import { navbarVisible } from "../store";
   import { onMount } from "svelte";
-  // import { Container } from '@sveltestrap/sveltestrap';
   onMount(() => {
   if ($navbarVisible == 'display: none;') navbarVisible.set('display: block;');
 });
@@ -50,19 +47,6 @@
     /* color: #f37022; */
   }
 
-  .content ul  {
-    display: inline-block;
-  }
-
-  .content ul li {
-    text-align: left;
-  }
-
-  .content ul li a {
-    color: #f37022;
-    text-decoration: none;
-    
-  }
 
   p {
     font-size: 1.2rem;

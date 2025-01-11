@@ -1,74 +1,55 @@
 {
   "services": {
-    "reno": {
-      "name": "Repairs & Renovations",
+    "carpentry": {
+      "name": "Carpentry",
       "SVList": [
-        "Wood & aluminum framing",
-        "Drywall hanging, mudding, taping & finishing",
-        "Painting & staining",
-        "Baseboards",
-        "Wood panneling",
-        "Wood refinishing",
-        "Vinyl siding",
-        "Weather stripping & caulking"
+        "Framing",
+        "Baseboards, trim, moulding",
+        "Railings",
+        "Decorative panneling",
+        "Fences, gates & decks (installation, repairs, restoration)",
+        "Shelving",
+        "Doors",
+        "Cabinets"
       ],
-      "up": ["", "#"], "down": ["arrow-down-circle", "#fixture"]
+      "up": ["", "#"], "down": ["arrow-down-circle", "#fixtures"]
     },
     "fixtures": {
-      "name": "Fixtures & Appliances",
+      "name": "Fixtures",
       "SVList": [
-        "Light fixtures & ceiling fans",
-        "Cabinets",
-        "Curtain rods",
-        "Shelving",
-        "Furniture assembly",
-        "Electric stoves",
-        "Dishwasher installation & replacement",
-        "Washers & dryers"
-      ],
-      "up": ["arrow-up-circle", "#reno"], "down": ["arrow-down-circle", "#fence"]
-    },
-    "fence": {
-      "name": "Fences",
-      "SVList": [
-        "Wood fences",
-        "Wood & metal gates",
-        "Post replacement & install",
-        "Fence repair",
-        "Metal gate restoration"
-      ],
-      "up": ["arrow-up-circle", "#fixture"], "down": ["arrow-down-circle", "#deck"]
-    },
-    "deck": {
-      "name": "Decks",
-      "SVList": [
-        "Raised or ground level wood, PVC or composite decks",
-        "Structural & cosmetic repairs",
-        "Complete refurbishment",
-        "Additions to existing deck"
-      ],
-      "up": ["arrow-up-circle", "#fence"], "down": ["arrow-down-circle", "#washroom"]
-    },
-
-
-    "washroom": {
-      "name": "Washrooms",
-      "SVList": [
-        "Toilet",
-        "Sinks",
-        "Cabinets",
+        "Toilets",
+        "Kitchen & bathroom sinks",
+        "Indoor & outdoor faucets",
         "Towel racks",
         "Shower doors",
-        "Mirrors"
+        "Mirrors",
+        "Lights & fans",
+        "Hood vents",
+        "Curtains & blinds"
       ],
-      "up": ["arrow-up-circle", "#deck"], "down": ["arrow-down-circle", "#more"]
-
+      "up": ["arrow-up-circle", "#carpentry"], "down": ["arrow-down-circle", "#other"]
     },
-    "more": {
-      "name": "And more...",
-      "p1": "Project not listed? Head over to the Contact page and I will see what I can do for you.",
-      "SVList": [],
-      "up": ["arrow-up-circle", "#washroom"], "down": ["", "#reno"]
+    "other": {
+      "name": "Other Services",
+      "SVList": [
+        "Drywall installation & finishing",
+        "Painting",
+        "Parging repair",
+        "Weatherproofing",
+        "TV mounting",
+        "Furniture assembly",
+        "Eavetrough & gutters (cleaning, installation, repairs)",
+        "Wood furniture refurbishing"
+      ],
+      "up": ["arrow-up-circle", "#fixtures"], "down": ["arrow-down-circle", "#custom"]
+    },
+    "custom": {
+      "name": "Custom Work",
+      "SVList": [
+        "I can provide solutions to a wide variety of unique problems or needs. "
+        
+      ],
+      "up": ["arrow-up-circle", "#other"], "down": ["arrow-down-circle", "#carpentry"]
     }
   }
 }

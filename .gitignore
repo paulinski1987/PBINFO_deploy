@@ -15,8 +15,11 @@ TODO.txt
 /src/routes/gallery/*
 /src/routes/servicesNew/*
 /src/components/RespNav.svelte.BAK
-src/lib/FakeReviews.json
-src/lib/img/gallery/test/*
+/src/lib/FakeReviews.json
+/src/lib/img/gallery/test/*
 *BAK*
-workingText.txt
-/src/components/services/GridCard.svelte
+/workingText.txt
+/src/components/services/SectionList.svelte
+/src/components/services/ServiceItem.svelte
+/src/lib//services/services.json
+/src/components/testing/*

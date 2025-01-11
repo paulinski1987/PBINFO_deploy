@@ -80,11 +80,17 @@
             ><span class="navlink">Contact</span></NavLink
           >
         </NavItem>
+
+        <!-- TEST -->
         <!-- <NavItem>
-          <NavLink href="/gallery" on:click={closeMenu}
-            ><span class="navlink">Gallery</span></NavLink
+          <NavLink href="/newservices" on:click={closeMenu}
+            ><span class="navlink">ServicesNew</span></NavLink
           >
         </NavItem> -->
+
+
+
+        <!-- END TEST -->
         <NavItem>
           <Button
             style="margin: 0;"

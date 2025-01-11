@@ -1,0 +1,171 @@
+{
+  "services": {
+    "outdoor": {
+      "deckAndFence": [
+        {
+          "serviceName": "Decks and Fences",
+          "serviceDescription": [
+            "Deck cleaning",
+            "Deck and fence installation",
+            "Deck and fence refurbishing",
+            "Paint/stain stripping",
+            "Painting, staining, sealing",
+            "Gate realignment",
+            "Post replacement",
+            "Deck extensions"
+          ]
+        },
+        {
+          "serviceName": "Eavestrough and Gutters",
+          "serviceDescription": [
+            "Cleaning",
+            "Realignment",
+            "Repair and replacement",
+            "Leaf guard installation"
+          ]
+        },
+        {
+          "serviceName": "Siding",
+          "serviceDescription": [
+            "Pressure washing",
+            "Vinyl siding repair",
+            "Window cleaning",
+            "Parging repair"
+          ]
+        }
+      ]
+    },
+    "indoor": {
+      "bathroom": [
+        {
+          "serviceName": "Bath and Shower",
+          "serviceDescription": [
+            "Shower installation",
+            "Faucets",
+            "Shower heads",
+            "Doors",
+            "Privacy glass",
+            "Caulking"
+          ]
+        },
+        {
+          "serviceName": "Fixtures and Accessories",
+          "serviceDescription": [
+            "Toilets",
+            "Vanities, shelving and cabinets",
+            "Lighting",
+            "Fans",
+            "Sinks, drains and faucets",
+            "Safety bars",
+            "Towel racks and toilet paper holders"
+          ]
+        },
+        {
+          "serviceName": "Mirrors",
+          "serviceDescription": [
+            "Mirror removal and disposal",
+            "Framed mirror repair",
+            "New mirror installation"
+          ]
+        }
+      ],
+
+      "kitchen": [
+        {
+          "serviceName": "Appliance Installation and Replacement",
+          "serviceDescription": [
+            "Refridgerators",
+            "Ovens, ranges and stoves",
+            "Dishwashers",
+            "Microwaves",
+            "Hood vents"
+          ]
+        },
+        {
+          "serviceName": "Storage and Counters",
+          "serviceDescription": [
+            "Countertop installations",
+            "Single and double sinks",
+            "Base cabient and cupboards",
+            "Cabinet repair and refurbishing",
+            "Caulking"
+          ]
+        }
+      ],
+
+      "generalRenos": [
+        {
+          "serviceName": "Carpentry",
+          "serviceDescription": [
+            "Framing",
+            "Baseboards",
+            "Window and door casings",
+            "Crown moulding",
+            "Panneling",
+            "Handrails",
+            "Interior and exterior doors"
+          ]
+        },
+        {
+          "serviceName": "Insulation, Drywall and Painting",
+          "serviceDescription": [
+            "Insulation and vapour barrier",
+            "Drywall installation",
+            "Hole patching",
+            "Taping and mudding",
+            "Drywall finishing",
+            "Painting"
+          ]
+        },
+        {
+          "serviceName": "Electrical",
+          "serviceDescription": [
+            "Light fixtures",
+            "Ceiling fans",
+            "Doorbells",
+            "GFCI outlet upgrades",
+            "Outlet or fixture relocation"
+          ]
+        }
+      ],
+
+      "householdTasks": [
+        {
+          "serviceName": "Furniture Assembly",
+          "serviceDescription": [
+            "Couches",
+            "Beds",
+            "Floor models",
+            "Cabinets",
+            "Tables",
+            "Childrens toys"
+          ]
+        },
+        {
+          "serviceName": "Mounting",
+          "serviceDescription": [
+            "Shelving",
+            "Television wall mounts",
+            "Speakers",
+            "Picture frames and paintings",
+            "Curtainrods and curtains",
+            "Decorations"
+          ]
+        }
+      ],
+
+      "custom": [
+        {
+          "serviceName": "Custom Carpentry",
+          "serviceDescription": [
+            "Handrails",
+            "Shelving",
+            "Furniture modifications",
+            "Moulding and trim",
+            "and more!"
+          ]
+        }
+      ]
+    }
+  }
+}

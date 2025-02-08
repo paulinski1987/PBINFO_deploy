@@ -118,6 +118,7 @@
       margin-bottom: 1em;
       text-align: center;
       color: #f37022;
+      opacity: 1;
     }
   
   input[type='text'] {

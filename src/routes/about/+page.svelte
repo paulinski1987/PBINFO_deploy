@@ -71,7 +71,8 @@ onMount(() => {
     margin: auto;
     margin-bottom: 1em;
     text-align: center;
-    /* color: #f37022; */
+    color: #f37022;
+    opacity: 1;
   }
 
 

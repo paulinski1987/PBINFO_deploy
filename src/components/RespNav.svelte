@@ -55,8 +55,7 @@
     data-bs-theme="dark"
   >
     <NavbarBrand href="/" class="me-auto text-left" on:click={closeMenu}
-      ><span id="navBrand">paulbanks.info</span></NavbarBrand
-    >
+      ><span id="navBrand">paulbanks.info</span></NavbarBrand>
     <NavbarToggler id="navBarToggler" on:click={() => (isOpen = !isOpen)} />
     <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
       <Nav class="ms-auto" navbar>
@@ -70,6 +69,13 @@
             ><span class="navlink">Services</span></NavLink
           >
         </NavItem>
+
+        <NavItem>
+          <NavLink href="/gallery" on:click={closeMenu}
+            ><span class="navlink">Gallery</span></NavLink
+          >
+        </NavItem>
+
         <NavItem>
           <NavLink href="/about" on:click={closeMenu}
             ><span class="navlink">About</span></NavLink

@@ -20,7 +20,7 @@
 
 
 <div class="text-center mt-2" style="max-width: 650px; margin: 0 auto">
-  <swiper-container navigation="true" scrollbar="true" rewind="true" effect="cube" keyboard-control="true"
+  <swiper-container navigation="true" scrollbar="true" loop="true" effect="cube" keyboard-control="true"
   style="--swiper-scrollbar-drag-bg-color: rgba(243, 112, 34, 0.5); --swiper-scrollbar-bg-color: rgba(243, 112, 34, 0.1); --swiper-navigation-color:rgba(243, 112, 34, 1); --swiper-navigation-sides-offset: -45px;"
   >
 

@@ -18,19 +18,27 @@
   <hr />
   <div class="content">
 
-    <p>I'm not a fan of long introductions so let's get to what's important for a homeowner.</p>
+    <h3 class="text-center">Quality Handyman Services You Can Trust</h3>
 
-    <p>I provide a wide range of interior and exterior maintenance, repair and renovation services. Aesthetics are just as important as functionality and I take a lot of pride in the quality of my work.</p>
+    <p class="firstParagraph">
+      I specialize in a wide range of interior and exterior maintenance, repair, and renovation services, delivering both functionality and aesthetics with every project. With a strong commitment to quality craftsmanship, I take pride in providing reliable, high-standard work tailored to your needs.
+    </p>
 
-    <p>I am fully insured, fulfill my commitments, fairness and honesty are important to me. </p>
+    <p>
+      As a fully insured professional, I uphold honesty, fairness, and dependability in every job. My goal is to complete projects efficiently while ensuring top-tier results.
+    </p>
 
-    <p>Check out the <a href="/gallery">Gallery</a> page for a small selection of pictures from previous projects.</p>
+    <p>
+      Explore the <a href="/gallery">Gallery</a> page to see examples of past work, and visit the <a href="/services">Services</a> section for a comprehensive list of what I offer. If you don’t see what you need, feel free to submit a request via the <a href="/contact">Contact</a> page—I strive to respond to inquiries the same day, often within a few hours.
+    </p>
 
-    <p>For an non-exhaustive list of some of the services I provide (plus some nifty images) see the <a href="/services">Services</a> section. If you can't find what you need the <a href="/contact">Contact</a> page has a convenient service request form. I do my best to respond to all requests the same day they are made, preferably within a few hours.</p>
+    <p>
+      Learn more about my background and hear from satisfied clients in the <a href="/about">About</a> section.
+    </p>
 
-    <p>The <a href="/about">About</a> section has some testimonials from my valued clients and a small section about myself. </p>
-
-    <p>Thank you for considering my services. I hope to hear from you soon!</p>
+    <p>
+      Thank you for considering my services—I look forward to helping with your next project!
+    </p>
 
     <p class="text-end">- Paul Banks</p>
   </div>
@@ -40,6 +48,11 @@
   h2 {
     color: #f37022;
     font-weight:bolder;
+  }
+
+  h3 {
+    color: #f37022;
+    margin-top: 1em;
   }
   hr {
     max-width: 600px;
@@ -58,5 +71,9 @@
     text-decoration: none;
     color: #f37022;
     font-weight: bolder;
+  }
+
+  .firstParagraph {
+    text-indent: 3em;
   }
 </style>

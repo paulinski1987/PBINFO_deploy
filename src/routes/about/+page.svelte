@@ -30,13 +30,13 @@ onMount(() => {
     </Col>
 
     <Col sm="12" md="6">
-      <p class="lead">Home improvement, repair and carpentry have always been passions of mine. </p>
+      <p class="firstParagraph">Home improvement, repair, and carpentry have been my passions of mine since I was a child.</p>
 
-      <p class="text-left">Growing up I was always eager to help my father and grandfather build, fix and renovate in a variety of projects, developing a proficient set of skills along the way.</p>
+      <p class="text-left">From a young age, I eagerly assisted my father and grandfather with building, fixing, and renovating projects, gaining hands-on experience and developing a strong foundation of skills along the way.</p>
 
-      <p class="text-left">Since graduating in 2006, I have worked on residential and commercial projects as a carpenter, glazier, roofer and cabinet installer.</p>
+      <p class="text-left">Since graduating in 2006, I have worked on a variety of residential and commercial projects, specializing as a carpenter, glazier, roofer, and cabinet installer.</p>
 
-      <p class="text-left">When it comes to my work as a handyman I bring diverse skills appropriate for many of the projects a homeowner would like.</p>
+      <p class="text-left">As a handyman, I bring a diverse skill set tailored to meet the needs of homeowners, ensuring high-quality workmanship across a wide range of projects.</p>
 
     </Col>
   </Row>
@@ -96,6 +96,10 @@ onMount(() => {
 }
 p {
     font-size: 1.2rem;
+  }
+
+  .firstParagraph {
+    text-indent: 3em;
   }
 
 </style>

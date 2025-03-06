@@ -20,23 +20,23 @@
 
     <h3 class="text-center">Quality Handyman Services You Can Trust</h3>
 
-    <p class="firstParagraph">
+    <p class="firstParagraph text-center">
       I specialize in a wide range of interior and exterior maintenance, repair, and renovation services, delivering both functionality and aesthetics with every project. With a strong commitment to quality craftsmanship, I take pride in providing reliable, high-standard work tailored to your needs.
     </p>
 
-    <p>
+    <p class="text-center">
       As a fully insured professional, I uphold honesty, fairness, and dependability in every job. My goal is to complete projects efficiently while ensuring top-tier results.
     </p>
 
-    <p>
+    <p class="text-center">
       Explore the <a href="/gallery">Gallery</a> page to see examples of past work, and visit the <a href="/services">Services</a> section for a comprehensive list of what I offer. If you don’t see what you need, feel free to submit a request via the <a href="/contact">Contact</a> page—I strive to respond to inquiries the same day, often within a few hours.
     </p>
 
-    <p>
+    <p class="text-center">
       Learn more about my background and hear from satisfied clients in the <a href="/about">About</a> section.
     </p>
 
-    <p>
+    <p class="text-center">
       Thank you for considering my services—I look forward to helping with your next project!
     </p>
 

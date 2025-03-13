@@ -8,6 +8,7 @@
   import  Quote  from '../../components/about/Quote.svelte';
   import { reviews } from '$lib/Reviews.json';
 import Logo from '$lib/img/logo.png';
+import Self from '$lib/img/march2025.png';
 import githubIcon from '$lib/img/githubLogo.png';
 import { navbarVisible } from '../store';
 import { onMount } from 'svelte';
@@ -25,11 +26,12 @@ onMount(() => {
     </Col>
   </Row>
   <Row>
-    <Col sm="12" md="6">
-      <Image fluid  id="profileImg" src={Logo} style=" border: 4px solid #f37022; border-radius: 1em; max-width: 300px; margin-bottom: 2em;"/>
+    <Col sm="12" md="4">
+      <!-- <Image fluid  id="profileImg" src={Logo} style=" border: 4px solid #f37022; border-radius: 1em; max-width: 300px; margin-bottom: 2em;"/> -->
+      <Image fluid  id="profileImg" src={Self} style=" border: 2px solid #f37022; border-radius: 1em; max-width: 300px; margin-bottom: 2em;"/>
     </Col>
 
-    <Col sm="12" md="6">
+    <Col sm="12" md="8">
       <p class="firstParagraph">Home improvement, repair, and carpentry have been my passions of mine since I was a child.</p>
 
       <p class="text-left">From a young age, I eagerly assisted my father and grandfather with building, fixing, and renovating projects, gaining hands-on experience and developing a strong foundation of skills along the way.</p>
